@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Dashboard</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="head">
+     <div id="inner">
+      <header id="nav" >
+        <div id="sa"><p>PURCHASE FLOW</p>
+         <div><a class="link" href="#head">Dashboard</a></div> 
+       <div><a class="link" href="#TASK">TASK</a></div> 
+      <div><a class="link" href="#Setting">SETTING</a></div> 
+                <!-- <nav class="navbar">
+        <ul>
+            <li><a id="DASHBOARD" href="#DASHBOARD">DASHBOARD</a></li>
+            <li><a href="#TASK">TASK</a></li>
+            <li><a href="#SETTEING">SETTEING</a></li>
+        </ul> -->
+    
+                </div>
+            </header>
+        </div>
+        <!-- <span><pre>Purchase Flow       Manage Task Flow Daily And Check Your Satus Here!</pre></span> -->
+         <br> 
+         <div id="STatus"  class="status-card">
+            <div class="calc">
+                <span class="calc-head">TOTAL TASK</span>
+                <span class="calc-count" id="Total">0</span>
+                </div>
+            <div class="calc" >
+                <span class="calc-head">COMPLETE</span>
+                <span class="calc-count" id="Complete">0</span>
+                </div>
+             <div class="calc" >
+                <span class="calc-head">RUNNING</span>
+                <span class="calc-count" id="Running">0</span>
+                </div>
+             <div class="calc" >
+                <span class="calc-head">PENDING</span>
+                <span class="calc-count" id="Pending">0</span>
+                </div>   
+
+            
+        </div>
+      
+        <table id="imageTable">
+         <tbody id="table-body">
+               <tr class="first"> 
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile Phone</th>
+        <th>Task Title</th>
+        <th>Priority</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Update</th>
+    </tr>
+</thead>
+  <!--   <tr class="second">
+        <td>YUG</td>
+        <td>shah@gmail.com</td>
+        <td>1233423421</td>
+        <td>Web</td>
+        <td>122</td>
+        <td>29-04-2026</td>
+        <td>Running Process</td>
+    </tr>
+    <tr class="Third">
+        <td>PURAK</td>
+        <td >xyz@gmail.com</td>
+        <td>657895745</td>
+        <td>AI Planner</td>
+        <td>133</td>
+        <td>29-04-2026</td>
+        <td>Pending</td>
+       
+    </tr>
+    <tr class="Fourth">
+        <td>TIRTH</td>
+       <td>fyz@gmail.com</td>
+        <td>657895745</td>
+        <td>AI Planner</td>
+        <td>133</td>
+        <td>29-04-2026</td>
+        <td>Pending</td>
+
+        
+    </tr>-->
+    </tbody>
+        </table> 
+<br>
+  
+<div id="searching">
+    <input id="search" type="search" placeholder="Searching">
+    <button id="task" >ADD Task</button>
+</div>
+
+<br>
+<!-- <button class="glass-button" >swap</button> -->
+
+<div id="successMsg" class="alert">
+    Form submitted successfully!
+</div>
+<form id="form">
+
+    <div id="container">
+        <p id="register">Register</p>
+        <label><b>Name</b></label>
+        <span class="error"id="nameError"></span>
+        <input type="text" class="input" id="name" required>
+
+        <label><b>Email</b></label>
+  <span class="error"id="emailError"></span>
+  <input type="email" class="input" id="email" required>
+
+  <label><b>Mobile-number</b></label>
+   <span class="error" id="mobileError"></span>
+ <input type="tel" class="input" id="mobile" required>
+
+ <label><b>Task-title</b></label>
+<span class="error" id="titleError"></span>
+<input type="text" class="input" id="title" required>
+
+<label><b>Due Date</b></label>
+<span class="error" id="dateError"></span>
+<input type="date" class="input" id="date" min="2026-04-21" required>
+    
+  <label><b>Priority</b></label>
+  <select id="priority"  class="input">
+     <option value="Low">Low</option>
+      <option value="High">High</option>
+</select>
+   <label><b>Status</b></label> 
+        <select id="Status"  class="input">
+            <option value="COMPLETE">COMPLETE</option>
+            <option value="RUNNING">RUNNING</option>
+            <option value="PENDING">PENDING</option>
+        </select>
+     <button type="submit">Submit</button>
+    </div>
+</form>
+ 
+<!-- <div id="dashboard">
+    <h1>DASHBOARD</h1>
+    
+</div> -->
+<br>
+<div><h1 id="TASK">TASK-FLOW</h1></div>
+<br>
+<div id="Task">
+    <div id="img"></div>
+  <div id="para"> Task Flow for Description-Based Purchase Orders
+Description-based POs are also called catalog-based punch out items.They are purchase orders with only description, and without an item reference. They are routed as expense destination.
+These POs can additionally have supplier item reference on the PO line or can only have description or can also have an internal item.
+The flow for these POs is very similar to the standard purchase order flows. You can create complementary fiscal documents and support freight fiscal documents for description-based purchase orders as well.
+For description-based POs, while importing the fiscal document, here's how the processing logic works:
+The supplier item reference on the purchase order line is used for matching with the inbound fiscal document line.
+Fiscal document Item matches with the internal item.
+</div>
+</div>
+
+<h1 id="TASK">SETTING</h1>
+<div id="Setting">
+    <div id="SE-para"> Task Flow for Description-Based Purchase Orders
+        Description-based POs are also called catalog-based punch out items.They are purchase orders with only description, and without an item reference. They are routed as expense destination.
+        These POs can additionally have supplier item reference on the PO line or can only have description or can also have an internal item.
+        The flow for these POs is very similar to the standard purchase order flows. You can create complementary fiscal documents and support freight fiscal documents for description-based purchase orders as well.
+        For description-based POs, while importing the fiscal document, here's how the processing logic works:
+        The supplier item reference on the purchase order line is used for matching with the inbound fiscal document line.
+        Fiscal document Item matches with the internal item.
+    </div>
+    <div id="img2"></div>
+</div>
+</div>
+    </div>
+</body>
+ <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
